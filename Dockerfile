@@ -30,8 +30,6 @@ RUN buildDeps="gcc g++ git mercurial make automake autoconf python-dev openssl-d
 && python setup.py build \
 && python setup.py install \
 && cd / \
-&& rm -rf /yenc \
-&& apk del $buildDeps \
 && rm -rf \
     /var/cache/apk \
     /par2cmdline \
